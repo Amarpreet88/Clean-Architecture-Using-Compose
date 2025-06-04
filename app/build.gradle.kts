@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.testImplementation
+
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
@@ -71,4 +73,7 @@ dependencies {
     implementation(libs.okhttp.logging)
     implementation(libs.androidx.core.splashscreen)
     implementation(libs.coil.compose)
+    testImplementation (libs.junit)
+    testImplementation (libs.kotlinx.coroutines.test)
+    testImplementation (libs.mockk)
 }
